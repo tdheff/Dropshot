@@ -1,0 +1,16 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{0004FF4C-08D7-4698-19AF-CF6255EF8D86}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "Dropshot",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	]
+}

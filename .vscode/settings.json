@@ -1,0 +1,7 @@
+{
+	"files.exclude": {
+		"/home/tommy/dev/Dropshot/.vscode": true,
+		"/home/tommy/dev/Dropshot/Content": true,
+		"/home/tommy/dev/Dropshot/Intermediate": true
+	}
+}

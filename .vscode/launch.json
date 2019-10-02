@@ -1,0 +1,104 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Dropshot (Debug)",
+			"request": "launch",
+			"preLaunchTask": "Dropshot Linux Debug Build",
+			"program": "/home/tommy/dev/Dropshot/Binaries/Linux/Dropshot-Linux-Debug",
+			"args": [
+			],
+			"cwd": "/home/tommy/dev/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Dropshot (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "Dropshot Linux DebugGame Build",
+			"program": "/home/tommy/dev/Dropshot/Binaries/Linux/Dropshot-Linux-DebugGame",
+			"args": [
+			],
+			"cwd": "/home/tommy/dev/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Dropshot (Development)",
+			"request": "launch",
+			"preLaunchTask": "Dropshot Linux Development Build",
+			"program": "/home/tommy/dev/Dropshot/Binaries/Linux/Dropshot",
+			"args": [
+			],
+			"cwd": "/home/tommy/dev/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Dropshot (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "Dropshot Linux Shipping Build",
+			"program": "/home/tommy/dev/Dropshot/Binaries/Linux/Dropshot-Linux-Shipping",
+			"args": [
+			],
+			"cwd": "/home/tommy/dev/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Dropshot (Test)",
+			"request": "launch",
+			"preLaunchTask": "Dropshot Linux Test Build",
+			"program": "/home/tommy/dev/Dropshot/Binaries/Linux/Dropshot-Linux-Test",
+			"args": [
+			],
+			"cwd": "/home/tommy/dev/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "DropshotEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "DropshotEditor Linux Debug Build",
+			"program": "/home/tommy/dev/UnrealEngine/Engine/Binaries/Linux/UE4Editor-Linux-Debug",
+			"args": [
+				"/home/tommy/dev/Dropshot/Dropshot.uproject"
+			],
+			"cwd": "/home/tommy/dev/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "DropshotEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "DropshotEditor Linux DebugGame Build",
+			"program": "/home/tommy/dev/UnrealEngine/Engine/Binaries/Linux/UE4Editor-Linux-DebugGame",
+			"args": [
+				"/home/tommy/dev/Dropshot/Dropshot.uproject"
+			],
+			"cwd": "/home/tommy/dev/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "DropshotEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "DropshotEditor Linux Development Build",
+			"program": "/home/tommy/dev/UnrealEngine/Engine/Binaries/Linux/UE4Editor",
+			"args": [
+				"/home/tommy/dev/Dropshot/Dropshot.uproject"
+			],
+			"cwd": "/home/tommy/dev/UnrealEngine",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/home/tommy/dev/UnrealEngine/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/home/tommy/dev/Dropshot/Dropshot.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/home/tommy/dev/UnrealEngine"
+		}
+	]
+}

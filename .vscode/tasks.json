@@ -1,0 +1,1710 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Dropshot Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Mac",
+				"Debug",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Mac",
+				"Debug",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Mac",
+				"Debug",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Mac",
+				"DebugGame",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Mac",
+				"DebugGame",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Mac",
+				"DebugGame",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Mac",
+				"Development",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Mac",
+				"Development",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Mac",
+				"Development",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Mac",
+				"Shipping",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Mac",
+				"Shipping",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Mac",
+				"Shipping",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Mac",
+				"Test",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Mac",
+				"Test",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Mac",
+				"Test",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"IOS",
+				"Debug",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"IOS",
+				"Debug",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"IOS",
+				"Debug",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"IOS",
+				"DebugGame",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"IOS",
+				"DebugGame",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"IOS",
+				"DebugGame",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"IOS",
+				"Development",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"IOS",
+				"Development",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"IOS",
+				"Development",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"IOS",
+				"Shipping",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"IOS",
+				"Shipping",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"IOS",
+				"Shipping",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"IOS",
+				"Test",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"IOS",
+				"Test",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"IOS",
+				"Test",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"HTML5",
+				"Debug",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot HTML5 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"HTML5",
+				"Debug",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot HTML5 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"HTML5",
+				"Debug",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"HTML5",
+				"DebugGame",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot HTML5 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"HTML5",
+				"DebugGame",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot HTML5 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"HTML5",
+				"DebugGame",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot HTML5 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"HTML5",
+				"Development",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot HTML5 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"HTML5",
+				"Development",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot HTML5 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"HTML5",
+				"Development",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"HTML5",
+				"Shipping",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot HTML5 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"HTML5",
+				"Shipping",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot HTML5 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"HTML5",
+				"Shipping",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot HTML5 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"HTML5",
+				"Test",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot HTML5 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"HTML5",
+				"Test",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot HTML5 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"HTML5",
+				"Test",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Linux",
+				"Debug",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Linux",
+				"Debug",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Linux",
+				"Debug",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Linux",
+				"DebugGame",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Linux",
+				"DebugGame",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Linux",
+				"DebugGame",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Linux",
+				"Development",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Linux",
+				"Development",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Linux",
+				"Development",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Linux Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Linux",
+				"Shipping",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Linux Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Linux",
+				"Shipping",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot Linux Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Linux Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Linux",
+				"Shipping",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Linux Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Linux",
+				"Test",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Linux Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Linux",
+				"Test",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot Linux Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot Linux Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"Linux",
+				"Test",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot TVOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"TVOS",
+				"Debug",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot TVOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"TVOS",
+				"Debug",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot TVOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot TVOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"TVOS",
+				"Debug",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot TVOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"TVOS",
+				"DebugGame",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot TVOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"TVOS",
+				"DebugGame",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot TVOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot TVOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"TVOS",
+				"DebugGame",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot TVOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"TVOS",
+				"Development",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot TVOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"TVOS",
+				"Development",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot TVOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot TVOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"TVOS",
+				"Development",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot TVOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"TVOS",
+				"Shipping",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot TVOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"TVOS",
+				"Shipping",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot TVOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot TVOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"TVOS",
+				"Shipping",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot TVOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"TVOS",
+				"Test",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot TVOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"TVOS",
+				"Test",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Dropshot TVOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "Dropshot TVOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"Dropshot",
+				"TVOS",
+				"Test",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "DropshotEditor Linux Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"DropshotEditor",
+				"Linux",
+				"Debug",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "DropshotEditor Linux Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"DropshotEditor",
+				"Linux",
+				"Debug",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"DropshotEditor Linux Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "DropshotEditor Linux Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"DropshotEditor",
+				"Linux",
+				"Debug",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "DropshotEditor Linux DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"DropshotEditor",
+				"Linux",
+				"DebugGame",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "DropshotEditor Linux DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"DropshotEditor",
+				"Linux",
+				"DebugGame",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"DropshotEditor Linux DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "DropshotEditor Linux DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"DropshotEditor",
+				"Linux",
+				"DebugGame",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "DropshotEditor Linux Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"DropshotEditor",
+				"Linux",
+				"Development",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "DropshotEditor Linux Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"DropshotEditor",
+				"Linux",
+				"Development",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"DropshotEditor Linux Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "DropshotEditor Linux Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"DropshotEditor",
+				"Linux",
+				"Development",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "DropshotEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"DropshotEditor",
+				"Mac",
+				"Debug",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "DropshotEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"DropshotEditor",
+				"Mac",
+				"Debug",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"DropshotEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "DropshotEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"DropshotEditor",
+				"Mac",
+				"Debug",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "DropshotEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"DropshotEditor",
+				"Mac",
+				"DebugGame",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "DropshotEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"DropshotEditor",
+				"Mac",
+				"DebugGame",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"DropshotEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "DropshotEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"DropshotEditor",
+				"Mac",
+				"DebugGame",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "DropshotEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"DropshotEditor",
+				"Mac",
+				"Development",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "DropshotEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"DropshotEditor",
+				"Mac",
+				"Development",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"DropshotEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		},
+		{
+			"label": "DropshotEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Linux/Build.sh",
+			"args": [
+				"DropshotEditor",
+				"Mac",
+				"Development",
+				"/home/tommy/dev/Dropshot/Dropshot.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/home/tommy/dev/UnrealEngine"
+			}
+		}
+	]
+}
