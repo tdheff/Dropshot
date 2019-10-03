@@ -10,7 +10,12 @@ ADsBall::ADsBall()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-    GetSphereComponent()->InitSphereRadius(7.0f);
+	Sphere = CreateDefaultSubobject<USphereComponent>(TEXT("Sphere"));
+	Mesh = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Mesh"));
+
+	RootComponent = Sphere;
+
+	GetSphereComponent()->InitSphereRadius(7.0f);
 }
 
 // Called when the game starts or when spawned
