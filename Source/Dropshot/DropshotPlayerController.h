@@ -23,20 +23,24 @@ protected:
 	virtual void SetupInputComponent() override;
 	// End PlayerController interface
 
-	/** Resets HMD orientation in VR. */
-	void OnResetVR();
+	/** Navigate player to the given world location. */
+	void SetNewMoveDestination(const FVector DestLocation);
 
+	//--------------------------
+	//        Input
+	//--------------------------
 	/** Move the player forward, or backward with negative input */
 	void MoveForward(float Value);
     /** Move the player to the right, or left with negative input */
     void MoveRight(float Value);
-
-	/** Navigate player to the given world location. */
-	void SetNewMoveDestination(const FVector DestLocation);
-
-	/** Input handlers for SetDestination action. */
-	void OnSetDestinationPressed();
-	void OnSetDestinationReleased();
+	/** Trigger swing with power */
+	void SwingPower();
+	/** Trigger swing with control */
+	void SwingControl();
+	/** Trigger swing with curve */
+	void SwingCurve();
+	/** Trigger swing with drop */
+	void SwingDrop();
 };
 
 

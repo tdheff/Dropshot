@@ -31,6 +31,8 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	bool bIsPossessed;
+
 private:
     /** Mesh */
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Ball, meta = (AllowPrivateAccess = "true"))
@@ -39,6 +41,7 @@ private:
     /** Mesh */
     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Ball, meta = (AllowPrivateAccess = "true"))
     class UStaticMeshComponent* Mesh;
+
 };
 
 

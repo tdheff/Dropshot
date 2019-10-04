@@ -23,32 +23,13 @@ void ADropshotPlayerController::SetupInputComponent()
 	// set up gameplay key bindings
 	Super::SetupInputComponent();
 
-	InputComponent->BindAction("SetDestination", IE_Pressed, this, &ADropshotPlayerController::OnSetDestinationPressed);
-	InputComponent->BindAction("SetDestination", IE_Released, this, &ADropshotPlayerController::OnSetDestinationReleased);
-
     InputComponent->BindAxis("MoveForward", this, &ADropshotPlayerController::MoveForward);
     InputComponent->BindAxis("MoveRight", this, &ADropshotPlayerController::MoveRight);
 
-	InputComponent->BindAction("ResetVR", IE_Pressed, this, &ADropshotPlayerController::OnResetVR);
-}
-
-void ADropshotPlayerController::OnResetVR()
-{
-	UHeadMountedDisplayFunctionLibrary::ResetOrientationAndPosition();
-}
-
-void ADropshotPlayerController::MoveForward(float Value) {
-    if (ADropshotCharacter* MyPawn = Cast<ADropshotCharacter>(GetPawn()))
-    {
-        MyPawn->MoveForward(Value);
-    }
-}
-
-void ADropshotPlayerController::MoveRight(float Value) {
-    if (ADropshotCharacter* MyPawn = Cast<ADropshotCharacter>(GetPawn()))
-    {
-        MyPawn->MoveRight(Value);
-    }
+	InputComponent->BindAction("SwingPower", IE_Pressed, this, &ADropshotPlayerController::SwingPower);
+	InputComponent->BindAction("SwingControl", IE_Pressed, this, &ADropshotPlayerController::SwingControl);
+	InputComponent->BindAction("SwingCurve", IE_Pressed, this, &ADropshotPlayerController::SwingCurve);
+	InputComponent->BindAction("SwingDrop", IE_Pressed, this, &ADropshotPlayerController::SwingDrop);
 }
 
 void ADropshotPlayerController::SetNewMoveDestination(const FVector DestLocation)
@@ -66,14 +47,32 @@ void ADropshotPlayerController::SetNewMoveDestination(const FVector DestLocation
 	}
 }
 
-void ADropshotPlayerController::OnSetDestinationPressed()
-{
-	// set flag to keep updating destination until released
-	bMoveToMouseCursor = true;
+void ADropshotPlayerController::MoveForward(float Value) {
+    if (ADropshotCharacter* MyPawn = Cast<ADropshotCharacter>(GetPawn()))
+    {
+        MyPawn->MoveForward(Value);
+    }
 }
 
-void ADropshotPlayerController::OnSetDestinationReleased()
+void ADropshotPlayerController::MoveRight(float Value) {
+    if (ADropshotCharacter* MyPawn = Cast<ADropshotCharacter>(GetPawn()))
+    {
+        MyPawn->MoveRight(Value);
+    }
+}
+
+void ADropshotPlayerController::SwingPower()
 {
-	// clear flag to indicate we should stop updating the destination
-	bMoveToMouseCursor = false;
+}
+
+void ADropshotPlayerController::SwingControl()
+{
+}
+
+void ADropshotPlayerController::SwingCurve()
+{
+}
+
+void ADropshotPlayerController::SwingDrop()
+{
 }
